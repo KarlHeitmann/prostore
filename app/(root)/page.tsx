@@ -1,11 +1,9 @@
 export const metadata = {
-  title: 'HOME'
-}
+  title: "HOME",
+};
 
 const Homepage = () => {
-  return <>
-  Prostore
-  </>;
-}
- 
+  return <>Prostore</>;
+};
+
 export default Homepage;
