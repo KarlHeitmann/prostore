@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export const metadata = {
   title: 'HOME'
 }
@@ -7,7 +5,6 @@ export const metadata = {
 const Homepage = () => {
   return <>
   Prostore
-  <Button>Ok</Button>
   </>;
 }
  
