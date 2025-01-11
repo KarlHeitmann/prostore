@@ -1,21 +1,17 @@
 import ProductList from "@/components/shared/product/product-list";
-import sampleData from "@/db/sample-data";
-// CODE TO TEST LOADER
-// const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+import { getLatestProducts } from "@/lib/actions/product.actions";
 
 export const metadata = {
   title: "HOME",
 };
 
-// CODE TO TEST LOADER
-// const Homepage = async () => {
-//   await delay(2000)
-const Homepage = () => {
-  console.log(sampleData);
+const Homepage = async () => {
+  const latestProducts = await getLatestProducts()
+
   return (
     <>
       <ProductList
-        data={sampleData.products}
+        data={latestProducts}
         title="Newest Arrivals"
         limit={4}
       />
